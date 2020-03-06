@@ -226,7 +226,7 @@ class Covid extends Component {
                 <Pie data={worldGeneralData} options={options}/>
               </div>
               <div className="column sub-panel">
-                <h3>Without active</h3>
+                <h3>Excluded active</h3>
                 <Pie data={worldGeneralWithoutActiveData} options={percentOptions} />
               </div>
             </div>
@@ -241,20 +241,20 @@ class Covid extends Component {
                 <Pie data={chinaGeneralData} options={options}/>
               </div>
               <div className="column sub-panel">
-                <h3>Without active</h3>
+                <h3>Excluded active</h3>
                 <Pie data={chinaGeneralWithoutActiveData} options={percentOptions} />
               </div>
             </div>
           </div>
           <div className="column panel" id="china">
-            <h2>Excluding China</h2>
+            <h2>Excluded China</h2>
             <div className="columns">
               <div className="column sub-panel">
                 <h3>All</h3>
                 <Pie data={excludingChinaGeneralData} options={options}/>
               </div>
               <div className="column sub-panel">
-                <h3>Without active</h3>
+                <h3>Excluded active</h3>
                 <Pie data={excludingChinaGeneralWithoutActiveData} options={percentOptions} />
               </div>
             </div>
