@@ -12,7 +12,7 @@ const cssLoaders =
 let config = {
   entry: resolve('./src/Covid.js'),
   mode: 'production',
-  watch: true,
+  watch: false,
   output: {
     path: resolve('./dist'),
     filename: 'bundle.min.js'
