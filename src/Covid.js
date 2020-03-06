@@ -69,7 +69,12 @@ class Covid extends Component {
         'Active',
         'Deaths',
         'Recovered'
-      ]
+      ],        
+      backgroundColor: [
+        "#f38b4a",
+        "#56d798",
+        "#ff8397"
+      ],
     };
 
     return (
