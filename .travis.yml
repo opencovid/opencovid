@@ -1,0 +1,28 @@
+language: node_js
+node_js:
+  - 10
+branches:
+  only:
+    - master
+
+cache:
+  directories:
+    - ~/.npm
+    - ~/.cache
+
+install:
+  - npm install
+
+script:
+  - npm run build
+
+deploy:
+  provider: pages
+  local-dir: dist
+  skip-cleanup: true
+  target-branch: master
+  repo: opencovid/opencovid.github.io
+  github-token: $OPENCOVID_GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  keep-history: true
+  on:
+    branch: master
