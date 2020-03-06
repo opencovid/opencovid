@@ -6,7 +6,7 @@ import { Doughnut } from 'react-chartjs-2';
 import 'react-bulma-components/dist/react-bulma-components.min.css';
 import './assets/stylesheets/style.scss';
 
-const BASE_API = "https://covid2019-api.herokuapp.com/";
+const BASE_API = "http://cors.io/?https://covid2019-api.herokuapp.com/";
 
 class Covid extends Component {
   constructor(props) {
