@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import $ from "jquery";
-import { Doughnut, Pie, Bar } from 'react-chartjs-2';
+import { Pie } from 'react-chartjs-2';
 import "chartjs-plugin-datalabels";
 import 'react-bulma-components/dist/react-bulma-components.min.css';
 import './assets/stylesheets/style.scss';
@@ -188,7 +188,11 @@ class Covid extends Component {
       },
       plugins: {
         datalabels: {
-          color: "#FFF"
+          font: {
+            weight: 'bold',
+            size: 14,
+          },
+          color: "#023147"
         }
       }
     }
@@ -204,13 +208,17 @@ class Covid extends Component {
    
             if (datasets.indexOf(ctx.dataset) === datasets.length - 1) {
               let sum = datasets[0].data.reduce((a, b) => a + b, 0);
-              let percentage = Math.round((value / sum) * 100) + '%';
+              let percentage = Math.round((value / sum) * 10000)/100 + '%';
               return percentage;
             } else {
               return percentage;
             }
           },
-          color: '#fff',
+          font: {
+            weight: 'bold',
+            size: 14,
+          },
+          color: '#023147',
         }
       }
     }
