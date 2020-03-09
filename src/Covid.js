@@ -95,9 +95,9 @@ class Covid extends Component {
     let worldGeneralData = {
       datasets: [{
         backgroundColor: [
-          "#f38b4a",
-          "#ff8397",
-          "#56d798"
+          "#ffc021",
+          "#ff5e5e",
+          "#56f78c"
         ],
         data: [active, deaths, recovered]
       }],
@@ -111,8 +111,8 @@ class Covid extends Component {
     let worldGeneralWithoutActiveData = {
       datasets: [{
         backgroundColor: [
-          "#ff8397",
-          "#56d798"
+          "#ff5e5e",
+          "#56f78c"
         ],
         data: [deaths, recovered]
       }],
@@ -125,9 +125,9 @@ class Covid extends Component {
     let chinaGeneralData = {
       datasets: [{
         backgroundColor: [
-          "#f38b4a",
-          "#ff8397",
-          "#56d798"
+          "#ffc021",
+          "#ff5e5e",
+          "#56f78c"
         ],
         data: [activeChina, deathsChina, recoveredChina]
       }],
@@ -141,8 +141,8 @@ class Covid extends Component {
     let chinaGeneralWithoutActiveData = {
       datasets: [{
         backgroundColor: [
-          "#ff8397",
-          "#56d798"
+          "#ff5e5e",
+          "#56f78c"
         ],
         data: [deathsChina, recoveredChina]
       }],
@@ -155,9 +155,9 @@ class Covid extends Component {
     let excludingChinaGeneralData = {
       datasets: [{
         backgroundColor: [
-          "#f38b4a",
-          "#ff8397",
-          "#56d798"
+          "#ffc021",
+          "#ff5e5e",
+          "#56f78c"
         ],
         data: [active - activeChina, deaths - deathsChina, recovered - recoveredChina]
       }],
@@ -171,8 +171,8 @@ class Covid extends Component {
     let excludingChinaGeneralWithoutActiveData = {
       datasets: [{
         backgroundColor: [
-          "#ff8397",
-          "#56d798"
+          "#ff5e5e",
+          "#56f78c"
         ],
         data: [deaths - deathsChina, recovered - recoveredChina]
       }],
