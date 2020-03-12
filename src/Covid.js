@@ -53,7 +53,7 @@ class Covid extends Component {
       });   
 
       $.ajax({
-        url: `${BASE_API}/country/Mainland_China`,
+        url: `${BASE_API}/country/China`,
         type: "GET",
         dataType: "json",
         crossDomain: true,
