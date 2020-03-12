@@ -58,7 +58,7 @@ class Covid extends Component {
         dataType: "json",
         crossDomain: true,
         success: function(response) {
-          let resChina = response.Mainland_China;
+          let resChina = response.China;
 
           let china = {
             confirmedChina: resChina.confirmed,
